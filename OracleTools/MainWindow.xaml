@@ -16,9 +16,8 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350" />
+            <ColumnDefinition Width="250" />
             <ColumnDefinition Width="550"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid MouseDown="Grid_MouseDown"  fw:PointerTracker.Enabled="True" Background="#01FFFFFF" >
@@ -37,16 +36,14 @@
                     <StackPanel x:Name="Menu" Margin="10"/>
                 </ScrollViewer>
             </Grid>
+           
+        </Grid>
+
+        <Grid Grid.Column="1" Background="White">
             <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
             </StackPanel>
         </Grid>
 
-        <Grid Grid.Column="1" Background="White">
-         
-        </Grid>
-
-        <Grid Grid.Column="2" fw:PointerTracker.Enabled="True" >
-
-        </Grid>
+       
     </Grid>
 </Window>
